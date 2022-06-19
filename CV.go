@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"time"
 )
@@ -31,10 +32,25 @@ func main() {
 		{First: "Sabrina", Last: "The builder", Age: 30, Language: "English, Arabic, and Latvian", Address: Address{"Latvia", "Liepaja", "Vilandes iela"}, Education: "Political science", CreatedAt: time.Now(), DeletedAt: &t},
 	}
 
-	output, err := json.MarshalIndent(users, ">>", "")
+	output, err := json.MarshalIndent(users, "", "")
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	fmt.Println(string(output))
+	// for decoding
+
+	content, err := ioutil.ReadFile("CV.json")
+	if err != nil {
+		fmt.Println(err.Error())
+	}
+	var CV []user
+
+	err2 := json.Unmarshal(content, &CV)
+	if err2 != nil {
+		fmt.Println("Error JSON UnMarshalling")
+		fmt.Println(err2.Error())
+	}
+	for _, person := range CV {
+		fmt.Println(person)
+	}
 }
