@@ -1,0 +1,30 @@
+[
+>>{
+>>"First name:": "Ilari",
+>>"Last name:": "Skywalker",
+>>"Age:": 43,
+>>"languages:": "Japanese, English, Finnish and Cantonese",
+>>"Address": {
+>>"Country:": "Finland",
+>>"City:": "Vanta",
+>>"Street:": "Koskenkorvakatu 90, 22"
+>>},
+>>"Education:": "Energy techology",
+>>"Created at:": "2022-06-19T11:36:27.5253027+03:00",
+>>"deleted_at:": "2022-06-19T11:36:27.5252964+03:00"
+>>},
+>>{
+>>"First name:": "Sabrina",
+>>"Last name:": "The builder",
+>>"Age:": 30,
+>>"languages:": "English, Arabic, and Latvian",
+>>"Address": {
+>>"Country:": "Latvia",
+>>"City:": "Liepaja",
+>>"Street:": "Vilandes iela 1, 34"
+>>},
+>>"Education:": "Political science and genetics",
+>>"Created at:": "2022-06-19T11:36:27.5253086+03:00",
+>>"deleted_at:": "2022-06-19T11:36:27.5252964+03:00"
+>>}
+>>]
