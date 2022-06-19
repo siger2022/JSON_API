@@ -1,3 +1,3 @@
 ## Backend practice
 
-This repo is for JSON encoding and decoding training.
+This repo is for training JSON encoding and decoding using Go.
